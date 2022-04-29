@@ -1,0 +1,10 @@
+NOTE:
+Before running any test please do the following:
+ - copy your .env file and name it ".env.testing"
+    e.g.: cp .env .env.testing
+ - change APP_ENV to "testing"
+ - create a new database named "[YOUR_DB_NAME]_testing"
+ - set DB_DATABASE to "[YOUR_DB_NAME]_testing"
+ - run "php artisan migrate"
+ - run "php artisan config:cache --env=testing" to use you .env.testing file
+    use "php artisan config:cache --env=local" to use your original .env file
